@@ -1,0 +1,31 @@
+{
+  "name": "meme-inventory",
+  "version": "1.0.0",
+  "description": "- inventory system\r - let users keep track of memes from front end\r - \r ### keep track of:\r - user\r - url\r - rating 1-10\r - user name\r - description\r - date submitted",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "tsnd --respawn --transpile-only ./app/app.ts",
+    "prod": "tsc && node ./build/app.js",
+    "client": "node ./scripts/start-client.js",
+    "start": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooploops/meme-inventory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooploops/meme-inventory/issues"
+  },
+  "homepage": "https://github.com/cooploops/meme-inventory#readme",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "ts-node-dev": "^1.0.0-pre.61",
+    "typescript": "^4.0.2"
+  }
+}
